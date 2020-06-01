@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Feltrinelli Acquisto</title>
+    <link rel="stylesheet" href="styleAcquisto.css">
+  </head>
+
+  <body>
+	<form class="contenitoreForm" action="cassa.php" method="post">
+		<h1>Libri Disponibili per l'acquisto</h1>
+		<input type="checkbox" name="libri[]" value="12 Se questo è un uomo - Primo Levi"> Se questo è un uomo - Primo Levi <font color = "green"> <b> 12€ </b> </font> <br>
+		<input type="checkbox" name="libri[]" value="13 La Coscienza di Zeno – Italo Svevo"> La Coscienza di Zeno – Italo Svevo <font color = "green"> <b> 13€ </b> </font> <br>
+		<input type="checkbox" name="libri[]" value="16 La fabbrica di cioccolato – Roald Dah"> La fabbrica di cioccolato – Roald Dah <font color = "green"> <b> 16€ </b> </font> <br>
+		<br>
+		<center> <input type="submit" name="Acquista" value="Acquista"> </center> <!--- Inviare il form al file informazione.php affinché i dati raccolti dal form possano essere processati -->
+	</form>
+  </body>
+
+</html>

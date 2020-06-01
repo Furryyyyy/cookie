@@ -1,0 +1,25 @@
+<!DOCTYPE html> <!-- Indica al browser che si tratta di un documento HTML5 -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Feltrinelli Login</title>
+	<!-- rel è un attributo che specifica la relazione di "this" documento con quello "associato"-->
+	<!-- stylesheet(foglio di stile) specifica in che modo dev'essere formattato il file html. In questo caso --
+		 si fa riferimento al file CSS chiamato styleFormLogin(linguaggio di formattazione dei documenti) -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <!-- Il form appaertiene a una classe chiamato chiamato contenitore. Invio del form al file 
+	controllore.php attraverso il metodo post affinché i dati possano essere processati-->
+	<form class="contenitoreForm" action="controllore.php" method="post">
+		<img src="immagini/avatar.png" class="icona">
+		<input type="text" name="username" placeholder="Inserisci Username">
+		<input type="password" name="password" placeholder="Inserisci Password">
+		
+		<input type="submit" name="Login" value="Login">
+		<input type="submit" name="Register" value="Register">
+	</form>
+  </body>
+  
+</html>
